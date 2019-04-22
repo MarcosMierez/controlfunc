@@ -1,0 +1,16 @@
+C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario
+--output-path=obj\Any CPU\Release\net461\
+--application-name=ControleFuncionario
+--content-root=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\Home\About.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\Home\Contact.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\Home\Index.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\PaginaInicial\Index.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\PaginaInicial\ResultadoTroca.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\PaginaInicial\SolicitarTroca.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\PaginaInicial\Trocas.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\Shared\Error.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\Shared\_Layout.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\_ViewImports.cshtml
+--file=C:\Users\Uti 02\source\repos\ControleFuncionario\ControleFuncionario\Views\_ViewStart.cshtml

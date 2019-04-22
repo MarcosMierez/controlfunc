@@ -1,12 +1,57 @@
-﻿
+﻿@model ControleFuncionario.Models.TrocaViewModel
 @{
     ViewData["Title"] = "Trocas";
 }
+<br />
+<button class="btn btn-success"><a href="~/Paginainicial/solicitartroca">Solicitar Trocar</a> </button>
 
 <h2>Trocas</h2>
-<p>Listar trocas de funcionarios</p>
-1 . Listar trocas pedidas e solicitadas. <br />
-2 . Listar status das trocas <br />
-3 . Solicitar novas trocas <br />
-4 . Cancelar trocas
+<p>Listar trocas de funcionarios  OK</p>
+1 . Listar trocas pedidas e solicitadas. OK<br />
+2 . Listar status das trocas OK<br />
+3 . Solicitar novas trocas OK<br />
+4 . Cancelar trocas <br />
+5 . Autorizar solicitacao de trocas <br />
 
+@{ 
+    if (!String.IsNullOrEmpty(Model.NomeSolicitante))
+    {
+                           <table class="table">
+                               <thead>
+                               <td>Troca</td>
+                               <td>Solicitado</td>
+                               <td>Dia</td>
+                               <td>Turno</td>
+                               <td>status</td>
+                               <td>solicitante</td>
+                               <td>Ação</td>
+                               </thead>
+
+                               <tr>
+                                   <td>@Model.IdTroca</td>
+                                   <td>@Model.NomeSolicitado</td>
+                                   <td>@Model.Dia</td>
+                                   <td>@Model.Turno</td>
+                                   <td>@Model.Status</td>
+                                   <td>@Model.NomeSolicitante</td>
+                                   <td>
+                                       <a href="@Url.Action("SetarTroca","PaginaInicial", new {id = "aut" })" class="btn btn-success" id="aut" name="aut">Autorizar</a>
+                                       <a href="@Url.Action("SetarTroca","PaginaInicial", new {id = "can" })" class="btn btn-danger" id="aut" name="can">Cancelar</a>
+                                   </td>
+                                   
+
+                               </tr>
+
+
+
+
+                           </table>
+    }
+
+
+    else
+    {
+                           <p style="text-transform:uppercase">Voce ainda nao possui nenhuma troca</p>
+    }
+}
+                           

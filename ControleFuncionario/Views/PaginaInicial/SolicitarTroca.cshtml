@@ -1,0 +1,58 @@
+﻿@model ControleFuncionario.Models.TecEnf;
+@{
+
+    ViewData["Title"] = "SolicitarTroca";
+
+}
+<br />
+
+<p>SolicitarTroca</p>
+<br />
+
+<div class="form-group col-md-12">
+
+    <form action="" method="post" class="col-md-6">
+        <h3>Funcionario</h3>
+        <div>
+            <select id="funcionario" name="funcionario" class="form-control">
+                @{
+                    for (int i = 0; i < @ViewBag.contador; i++)
+                    {
+                        <option value="@ViewBag.ListaFunc[i]" id="funcionario" name="funcionario">@ViewBag.ListaFunc[i]</option>
+                    }
+
+                }
+            </select>
+
+            <h3>Turno</h3>
+            <div class="input-group" id="turno">
+                <input type="checkbox" value="dia" name="turno" id="turno" />Dia
+            </div>
+            <div class="input-group" id="turno">
+                <input type="checkbox" value="noite" name="turno" id="turno">Noite
+            </div>
+        </div>
+        <h3>Dia</h3>
+        <select id="diadoMes" name="diadoMes" class="form-control">
+            @{
+                for (int i = 0; i <= 31; i++)
+                {
+                    <option id="diadoMes" value="@i" name="@i">@i</option>
+                }
+            }
+        </select>
+        <br />
+        <div style="left">
+            <button class="btn btn-success" type="submit">Solicitar</button>
+        </div>
+        
+
+    </form>
+
+</div>
+<div class="col-md-6"></div>
+<br />
+
+
+
+
